@@ -2,19 +2,26 @@
 
 ## 作者与来源
 
-本仓库基于 **[ljezio](https://github.com/ljezio)** 开发的 **[pure-live](https://github.com/ljezio/pure-live)**，增加虎牙高画质切换与播放器延迟初始化的兼容修复。
+本仓库基于 **[ljezio](https://github.com/ljezio)** 开发的 **[pure-live](https://github.com/ljezio/pure-live)**，增加虎牙高画质切换、播放器延迟初始化，以及斗鱼和B站默认最高可用画质的兼容修复。
 
 - **原作者：ljezio**。界面、多平台支持及基础功能来自原项目。
 - [原项目与源代码](https://github.com/ljezio/pure-live) · [原作者的 ScriptCat 脚本](https://scriptcat.org/zh-CN/script-show-page/4481)
-- 虎牙修复与维护：**[yt0575](https://github.com/yt0575)**。
+- 兼容修复与维护：**[yt0575](https://github.com/yt0575)**。
 - 许可证：**GPL-3.0-or-later**，保留原作者署名及版权信息。
 
 ## 修复版下载
 
 - [ScriptCat：纯净直播（pure live）虎牙高画质修复版](https://scriptcat.org/zh-CN/script-show-page/8539)
-- [GitHub Release v5.2.15：完整用户脚本与校验文件](https://github.com/yt0575/pure-live/releases/tag/v5.2.15)
+- [GitHub Release v5.2.16：完整用户脚本与校验文件](https://github.com/yt0575/pure-live/releases/tag/v5.2.16)
 
-ScriptCat 发行版仅调整名称、命名空间、介绍与来源署名，运行代码与 v5.2.15 Release 保持一致。安装后只启用原版或修复版中的一份，避免重复执行。
+ScriptCat 发行版仅调整名称、命名空间、介绍与来源署名，运行代码与 v5.2.16 Release 保持一致。安装后只启用原版或修复版中的一份，避免重复执行。
+
+### v5.2.16
+
+- 斗鱼和B站在进入直播间后，默认选择原生菜单中最高可用画质；自动切换开关默认开启。
+- 主动展开延迟加载的画质菜单，处理已经存在的菜单与晚于10秒完成初始化的播放器。
+- 自动选择成功后停止操作，保留用户后续的手动画质选择；关闭自动切换时不操作菜单。
+- 2026-10-17 在斗鱼213116和B站544618使用本版画质逻辑，确认实际视频由1280×720升为1920×1080。正式产物另通过6项完整脚本测试，连同27项源码测试共33项通过。
 
 ## 原项目介绍与入口
 
